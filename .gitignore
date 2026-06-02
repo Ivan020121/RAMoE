@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.vscode
+.venv
+uv.lock
+SST
+st-gcn
+dataset
+dataset.tar.gz
+new_dataset
+checkpoint/
+
+*.svg
+img/
+data_provider/video

@@ -1,0 +1,42 @@
+[project]
+name = "swit-code"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dill>=0.4.0",
+    "einops>=0.8.1",
+    "h5py>=3.15.1",
+    "joblib>=1.5.2",
+    "jupyterlab>=4.1.6",
+    "matplotlib>=3.10.7",
+    "numpy>=2.0.2",
+    "opencv-python>=4.12.0.88",
+    "optuna-dashboard>=0.19.0",
+    "packaging>=24.1",
+    "pandas>=2.3.3",
+    "pg8000>=1.31.5",
+    "pyts",
+    "scikit-learn>=1.7.2",
+    "scikit-video>=1.1.11",
+    "seaborn>=0.13.2",
+    "timm>=1.0.21",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "tqdm>=4.66.5",
+    "xgboost>=3.1.1",
+]
+
+[tool.uv.sources]
+torch = { index = "torch-cu130" }
+torchvision = { index = "torch-cu130" }
+
+[[tool.uv.index]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
+
+[[tool.uv.index]]
+name = "torch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
