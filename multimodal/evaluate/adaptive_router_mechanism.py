@@ -21,6 +21,10 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 
+plt.rcParams["font.family"] = "DejaVu Sans"
+plt.rcParams["font.sans-serif"] = ["DejaVu Sans"]
+plt.rcParams["axes.unicode_minus"] = False
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
@@ -299,7 +303,7 @@ def expert_profile_analysis(records: pd.DataFrame, output_dir: Path, fmt: str) -
     profile["expert"] = profile["selected_expert"].map(lambda x: f"Expert {int(x) + 1}")
     profile.to_csv(output_dir / "expert_profile_metrics.csv", index=False)
 
-    sns.set_theme(style="white", context="paper", font_scale=1.1)
+    sns.set_theme(style="white", context="paper", font_scale=1.1, rc={"font.family": "DejaVu Sans"})
     plt.figure(figsize=(11, 4.8))
     sns.heatmap(
         class_pivot,
@@ -413,7 +417,7 @@ def effect_size_analysis(records: pd.DataFrame, output_dir: Path, fmt: str) -> p
     pivot = effect_df.pivot(index="expert", columns="factor", values="eta_squared")
     pivot = pivot.rename(columns=FACTOR_LABELS)
 
-    sns.set_theme(style="white", context="paper", font_scale=1.1)
+    sns.set_theme(style="white", context="paper", font_scale=1.1, rc={"font.family": "DejaVu Sans"})
     fig, ax = plt.subplots(figsize=(12, 5.6))
     sns.heatmap(
         pivot,
