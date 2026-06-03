@@ -26,6 +26,10 @@ from sklearn.svm import LinearSVC
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
+plt.rcParams["font.family"] = "DejaVu Sans"
+plt.rcParams["font.sans-serif"] = ["DejaVu Sans"]
+plt.rcParams["axes.unicode_minus"] = False
+
 try:
     from xgboost import XGBClassifier
 except ImportError:
@@ -513,7 +517,7 @@ GROUP_COLORS = {
 
 
 def plot_mutual_explainability(selected: pd.DataFrame, output_dir: Path, fmt: str) -> None:
-    sns.set_theme(style="whitegrid", context="paper", font_scale=1.15)
+    sns.set_theme(style="whitegrid", context="paper", font_scale=1.15, rc={"font.family": "DejaVu Sans"})
     plot_df = selected.copy()
     plot_df["feature_group_label"] = plot_df["feature_group"].map(GROUP_LABELS)
     order = ["Majority Baseline", "Prior-side Only", "Adaptive Feature-side Only", "Adaptive-side Only", "Prior-visible Side Only", "Combined"]
