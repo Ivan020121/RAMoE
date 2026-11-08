@@ -146,12 +146,6 @@ The cache SHA256 was `a4ea5ed3efb9f15e8716a9723baf0e2e52c7d637621a291246ec445da9
 
 ## Citation
 
-```bibtex
-@article{ramoe2026,
-  title   = {RAMoE: Reliability-Aware Multimodal Fusion for Automated Safety Monitoring of Scaffold Operations Using IMU and Skeleton Keypoints},
-  author  = {Li, Wenhao and Zhu, Liujinxiang and Bao, Yihang and Liu, Tianqi and Su, Hechong and Chang, Shi and Lin, Guan Ning},
-  year    = {2026}
-}
-```
+Citation details are withheld during anonymous review.
 
 The ST-GCN attribution and license notice are preserved in [models/skeleton.py](models/skeleton.py).
