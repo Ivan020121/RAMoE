@@ -1,0 +1,4 @@
+909a0f6759b10db4cdedd6e468e2849e18f2fc3df8092a30390790a8a4bd45ef  checkpoints/pretrained/imu.pt
+e3d0d9cf333541d197342091bd3e5155a43551da91a4c20feb18ec615cf1541f  checkpoints/pretrained/kp.pt
+44c4ffa045341c4f6458b13d54e433a53f3416b239836626fd8b5a8b20f910d9  checkpoints/ramoe/best.pt
+5aadcfd53d90d82859a6d523815b9058806ff472f8df08239d73c87e859ed443  checkpoints/ramoe/latest.pt
