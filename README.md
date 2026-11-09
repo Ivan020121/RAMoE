@@ -44,7 +44,7 @@ Install [Git LFS](https://git-lfs.com/) before cloning to download the included 
 
 ```bash
 git lfs install
-git clone https://github.com/Ivan020121/RAMoE.git
+git clone https://github.com/anonymous-holder
 cd RAMoE
 git lfs pull
 ```
